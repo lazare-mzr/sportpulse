@@ -1,0 +1,101 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #e9f7ef;
+    color: #1e3d29;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #145a32;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.8em;
+    color: #58a6ff;
+}
+
+header .logo span {
+    color: #27ae60;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+.cart {
+    background-color: #2ecc71;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.cart h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.cart ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cart li {
+    background-color: #27ae60;
+    color: #f1f1f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart p {
+    font-size: 1.4em;
+    margin-top: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #145a32;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 0.9em;
+    margin-top: 30px;
+}
+
+footer span {
+    color: #27ae60;
+}
+
+.clear-btn {
+    background-color: #c0392b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+    background-color: #e74c3c;
+}

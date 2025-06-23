@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formula 1 - Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/F1 Home.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="/home" style="color: rgb(255, 255, 255); text-decoration: none;">Formula 1 <span>Sport <span>Pulse</span></a></div>
+    <nav>
+      <a href="/F1home">Home</a>
+      <a href="/F1drivers">Drivers</a>
+      <a href="/F1races">Races</a>
+      <a href="/LogIn" class="btn-login">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <h1>Speed. Precision. Glory.</h1>
+      <p>Follow the 2025 Formula 1 World Championship</p>
+      <a href="/F1home" class="btn">Enter the Race</a>
+    </div>
+  </section>
+
+  <section class="drivers">
+    <h2>🔥 Top Drivers</h2>
+    <div class="driver-grid">
+      <div class="driver-card">
+        <img src="static\img\hamilton.jpg" alt="Hamilton"/>
+        <h3>Lewis Hamilton</h3>
+        <p>Scuderia Ferrari Hp</p>
+      </div>
+      <div class="driver-card">
+        <img src="static\img\verstappen.jpg" alt="Verstappen"/>
+        <h3>Max Verstappen</h3>
+        <p>Oracle Red Bull Racing</p>
+      </div>
+      <div class="driver-card">
+        <img src="static\img\leclerc.jpg" alt="Leclerc"/>
+        <h3>Charles Leclerc</h3>
+        <p>Scuderia Ferrari Hp</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="races">
+    <h2>🏁 Upcoming Races</h2>
+    <ul>
+      <li><strong>British Grand Prix</strong> — July 7, 2025</li>
+      <li><strong>Hungarian Grand Prix</strong> — July 21, 2025</li>
+      <li><strong>Belgian Grand Prix</strong> — August 4, 2025</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Formula One Pulse. Powered IGL Inc.</p>
+  </footer>
+</body>
+</html>

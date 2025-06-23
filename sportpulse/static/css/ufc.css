@@ -1,0 +1,120 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 10px;
+  border-bottom: 4px solid #00ff00;
+}
+
+.logo {
+  font-size: 2em;
+  color: white;
+}
+
+.logo span {
+  color: #00ff00;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.hero {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .text h1 {
+  font-size: 3em;
+  color: #00ff00;
+}
+
+.hero .text p {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+.fighters,
+.events,
+.sponsor {
+  padding: 40px;
+  text-align: center;
+}
+
+.fighters h2,
+.events h2,
+.sponsor h2 {
+  font-size: 2em;
+  color: #00ff00;
+  margin-bottom: 30px;
+}
+
+.fightersimages {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.fighter-card {
+  background-color: #222;
+  padding: 20px;
+  border: solid #00ff00;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.fighter-card img {
+  width: 260px;
+  border-radius: 10px;
+}
+
+.fighter-card h3 {
+  margin-top: 15px;
+  color: #00ff00;
+}
+
+.events ul {
+  list-style: none;
+}
+
+.events li {
+  margin-bottom: 15px;
+}
+
+.sponsor-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.sponsor-logo img {
+  height: 100px;
+  filter: drop-shadow(0 0 10px #00ff00);
+}
+
+.sponsor-logo p {
+  color: #00ff00;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+  font-size: 0.9em;
+}

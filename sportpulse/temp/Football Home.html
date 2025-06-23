@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Football Web</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">Football <span>Pulse</span></div>
+    <nav>
+      <a href="/footballhome">🏠Home</a>
+      <a href="/top-players">🏆Players</a>
+      <a href="/matches">🔥Matches</a>
+      <a href="/shop">🛒 Shop</a>      
+
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="text">
+      <h1>Feel the Game</h1>
+      <p>All the latest action.One place.</p>
+    </div>
+  </section>
+
+<section class="players">
+    <h2>All eyes on:</h2>
+    <div class="playersimages">
+      <div class="player-card">
+        <img src="static\img\Messi.png" alt="Player 1"/>
+        <h3>Lionel Messi</h3>
+        <p>Forward | Inter Miami</p>
+      </div>
+      <div class="player-card">
+        <img src="static\img\Haaland.png" alt="Player 2"/>
+        <h3>Erling Haaland</h3>
+        <p>Striker | Manchester City</p>
+      </div>
+      <div class="player-card">
+        <img src="static\img\valverde.jpg" alt="Player 3"/>
+        <h3>Federico Valverde</h3>
+        <p>Midfielder | Real Madrid</p>
+      </div>
+    </div>
+</section>
+
+  <section class="matches">
+    <h2>📅 Special Upcoming Matches</h2>
+    <ul>
+      <li><strong>Man City vs Real Madrid</strong> — June 18</li>
+      <li><strong>Barcelona vs PSG</strong> — June 21</li>
+      <li><strong>Liverpool vs Bayern</strong> — June 25</li>
+    </ul>
+  </section>
+
+  <footer>Football Pulse — Powered By IGL inc.</footer>
+</body>
+</html>

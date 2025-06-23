@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>View Cart - Football Pulse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/view-cart.css') }}"/>
+</head>
+<body>
+
+<header>
+    <div class="logo">Football <span>Pulse</span></div>
+    <nav>
+        <a href="/footballhome">🏠 Home</a>
+        <a href="/matches">🔥 Matches</a>
+        <a href="/shop">🛒 Shop</a>
+        <a href="/top-players">🏆 Top Players</a>
+        <a href="/view-cart">🛒 Cart</a>
+    </nav>
+</header>
+
+<section class="cart">
+    <h2>Your Cart</h2>
+    <ul>
+        {% for item in cart_items %}
+            <li>{{ item.item_name }} - ${{ item.price }}</li>
+        {% endfor %}
+    </ul>
+    <p>Total: ${{ total_price }}</p>
+</section>
+
+<form action="{{ url_for('clear_cart') }}" method="POST">
+    <button type="submit" class="clear-btn">🗑️ Clear Cart</button>
+</form>
+
+
+<footer>
+    Football Pulse — Powered By IGL inc.
+</footer>
+
+</body>
+</html>

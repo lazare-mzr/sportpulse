@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UFC</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/ufc.css') }}"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">UFC <span>Pulse</span></div>
+    <nav>
+        <a href="/ufchome">🏠 Home</a>
+        <a href="/ufcevents">🥊 Events</a>
+        <a href="/ufctopfighters">🏆 Top Fighters</a>
+    </nav>
+</header>
+
+<section class="hero">
+  <img src="static\img\octagon.jpg">
+  <div class="text">
+    <h1>Feel the Fight</h1>
+    <p>All the octagon action. One place.</p>
+  </div>
+</section>
+
+
+<section class="fighters">
+    <h2>Fighters to Watch:</h2>
+    <div class="fightersimages">
+      <div class="fighter-card">
+        <img src="static\img\makhatchev.png" alt="Fighter 1"/>
+        <h3>Islam Makhachev</h3>
+        <p>Lightweight Champion</p>
+      </div>
+      <div class="fighter-card">
+        <img src="static\img\jon bones.png" alt="Fighter 2"/>
+        <h3>Jon Jones</h3>
+        <p>Heavyweight Champion</p>
+      </div>
+      <div class="fighter-card">
+        <img src="static\img\dvalishvili.png" alt="Fighter 3"/>
+        <h3>Merab Dvalishvili</h3>
+        <p>Bantamweight Champion</p>
+      </div>
+    </div>
+</section>
+
+<section class="events">
+    <h2>📅 Upcoming UFC Special Events</h2>
+    <ul>
+      <li><strong>UFC 304: Edwards vs Covington</strong> — July 6</li>
+      <li><strong>UFC Fight Night: Tuivasa vs Pavlovich</strong> — July 13</li>
+      <li><strong>UFC 305: Makhachev vs Gaethje</strong> — July 27</li>
+    </ul>
+</section>
+
+<section class="sponsor">
+  <h2>Official Partner:</h2>
+  <div class="sponsor-logo">
+    <img src="static\img\monster.jpg" alt="Monster Energy Logo"/>
+    <p><strong>Monster Energy</strong> - Unleash the Beast.</p>
+  </div>
+</section>
+
+
+<footer>UFC Pulse - Fueled by <strong>Monster Energy</strong>. Made by IGL Inc.</footer>
+</body>
+</html>

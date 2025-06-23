@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Shop - Football Pulse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/shop.css') }}"/>
+</head>
+<body>
+
+<header>
+    <div class="logo">Football <span>Pulse</span></div>
+    <nav>
+        <a href="/footballhome">🏠 Home</a>
+        <a href="/matches">🔥 Matches</a>
+        <a href="/shop">🛒 Shop</a>
+        <a href="/top-players">🏆 Top Players</a>
+        <a href="/view-cart">🛒 Cart</a>
+    </nav>
+</header>
+
+<section class="shop">
+    <h2>🛒 Official Fan Shop</h2>
+    <div class="shop-items">
+        <div class="shop-card">
+            <img src="static\img\hudi.jpg" alt="Hood">
+            <h3>Hood</h3>
+            <p>50$</p>
+            <form method="POST" action="/footballadd_to_cart">
+                <input type="hidden" name="item_name" value="Hood">
+                <input type="hidden" name="price" value="50">
+                <button type="submit" class="button">Add to Cart</button>
+            </form>
+        </div>
+        <div class="shop-card">
+            <img src="static\img\headwear.jpg" alt="Headwear">
+            <h3>Headwear</h3>
+            <p>10$</p>
+            <form method="POST" action="/footballadd_to_cart">
+                <input type="hidden" name="item_name" value="Headwear">
+                <input type="hidden" name="price" value="10">
+                <button type="submit" class="button">Add to Cart</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    Football Pulse — Powered By IGL inc.
+</footer>
+
+</body>
+</html>

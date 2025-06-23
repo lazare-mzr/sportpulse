@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login - Sport Pulse</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="Favicon.ico" type="image/x-icon" />
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      background: url('bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      color: #fff;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(30, 30, 30, 0.85);
+      z-index: -1;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ff0000;
+      font-weight: lighter;
+    }
+
+    nav a {
+      font-weight: 700;
+      text-decoration: none;
+      margin-left: 25px;
+      padding: 8px 15px;
+      border-radius: 8px;
+      transition: 0.3s;
+      font-size: 16px;
+      display: inline-block;
+      color: #ccc;
+    }
+
+    nav a.football {
+      background-color: #1e7e34;
+      color: white;
+    }
+    nav a.football:hover {
+      background-color: #28a745;
+      color: #e2f0cb;
+    }
+
+
+    nav a.ufc {
+      background-color: #111;
+      color: #d90429;
+      border: 2px solid #d90429;
+    }
+    nav a.ufc:hover {
+      background-color: #d90429;
+      color: #111;
+      border-color: #d90429;
+    }
+
+
+    nav a.f1 {
+      background-color: #d90429;
+      color: white;
+    }
+    nav a.f1:hover {
+      background-color: #ff3b4a;
+      color: #fff5f6;
+    }
+
+    .wrapper {
+      width: 420px;
+      background: rgba(217, 4, 41, 0.9);
+      border-radius: 12px;
+      padding: 30px 40px;
+      margin: 120px auto 0;
+      box-shadow: 0 0 15px rgba(217, 4, 41, 0.8);
+      color: #fff;
+    }
+
+    .wrapper h1 {
+      font-size: 36px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .wrapper .input-box {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin: 25px 0;
+    }
+
+    .input-box input {
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      border: none;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, 0.7);
+      border-radius: 40px;
+      font-size: 16px;
+      color: #fff;
+      padding: 20px 45px 20px 20px;
+      transition: border-color 0.3s;
+    }
+
+    .input-box input::placeholder {
+      color: #fff;
+      opacity: 0.8;
+    }
+
+    .input-box input:focus {
+      border-color: #ffccd5;
+    }
+
+    .input-box i {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 22px;
+      color: #fff;
+      opacity: 0.8;
+    }
+
+    .wrapper .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14.5px;
+      margin: -10px 0 20px;
+    }
+
+    .remember-forgot label input {
+      accent-color: #fff;
+      margin-right: 6px;
+    }
+
+    .remember-forgot a {
+      color: #ffccd5;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .remember-forgot a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    .wrapper .btn {
+      width: 100%;
+      height: 45px;
+      background: #fff;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #d90429;
+      font-weight: 700;
+      box-shadow: 0 0 12px rgba(217, 4, 41, 0.7);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .wrapper .btn:hover {
+      background: #ffccd5;
+      color: #d90429;
+    }
+
+    .wrapper .register-link {
+      font-size: 14.5px;
+      text-align: center;
+      margin: 20px 0 15px;
+    }
+
+    .register-link p a {
+      color: #ffccd5;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .register-link p a:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    @media(max-width: 480px) {
+      .wrapper {
+        width: 90%;
+        padding: 25px 20px;
+      }
+
+      header {
+        padding: 1em;
+      }
+
+      nav a {
+        margin-left: 10px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Sport <span>Pulse</span></div>
+    <nav>
+      <a href="#" class="football">Football</a>
+      <a href="#" class="ufc">UFC</a>
+      <a href="/F1home" class="f1">F1</a>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+    <form method="POST" action="/LogIn">
+      <h1>Login</h1>
+      <div class="input-box">
+        <input type="text" name="username" placeholder="Username" required />
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" name="password" placeholder="Password" required />
+        <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox" /> Remember Me</label>
+        <a href="#">Forgot Password</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+      <div class="register-link">
+        <p>Don't have an account? <a href="/Registration">Register</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

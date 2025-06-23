@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sport Pulse</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="/home" style="color: rgb(255, 0, 0); text-decoration: none;">Sport <span>Pulse</span></a></div>
+
+    <nav>
+      <h1>Welcome, {{ username }}!</h1>
+      <a href="#f1">Formula 1</a>
+      <a href="#football">Football</a>
+      <a href="#ufc">UFC</a>
+      {% if 'user_id' in session %}
+    <a href="{{ url_for('logout') }}">Logout ({{ session['username'] }})</a>
+{% else %}
+    <a href="{{ url_for('LogIn') }}">Login</a>
+{% endif %}
+
+    </nav>
+  </header>
+
+
+  <section class="hero f1" id="f1">
+    <div class="overlay">
+      <h1>Formula 1</h1>
+      <p>Speed. Precision. Glory.</p>
+      <a href="/F1home" class="btn">Enter the Race</a>
+    </div>
+  </section>
+
+  <section class="drivers f1">
+    <h2>🏎️ Top Drivers</h2>
+    <div class="driver-grid">
+      <div class="driver-card">
+        <img src="static\img\hamilton.jpg" alt="Hamilton"/>
+        <h3>Lewis Hamilton</h3>
+        <p>Scuderia Ferrari HP</p>
+      </div>
+      <div class="driver-card">
+        <img src="static\img\verstappen.jpg" alt="Verstappen"/>
+        <h3>Max Verstappen</h3>
+        <p>Oracle Red Bull Racing</p>
+      </div>
+      <div class="driver-card">
+        <img src="static\img\leclerc.jpg" alt="Leclerc"/>
+        <h3>Charles Leclerc</h3>
+        <p>Scuderia Ferrari HP</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero football" id="football">
+    <div class="overlay">
+      <h1>Football</h1>
+      <p>Passion. Rivalry. Glory.</p>
+      <a href="/footballhome" class="btn">Kick Off</a>
+    </div>
+  </section>
+
+  <section class="drivers football">
+    <h2>⚽ Star Players</h2>
+    <div class="driver-grid">
+      <div class="driver-card">
+        <img src="static\img\messi.png" alt="Messi"/>
+        <h3>Lionel Messi</h3>
+        <p>Inter Miami</p>
+      </div>
+      <div class="driver-card">
+        <img src="static\img\haaland.png" alt="Haaland"/>
+        <h3>Erling Haaland</h3>
+        <p>Man City</p>
+      </div>
+      <div class="driver-card">
+        <img src="static\img\mbappe.jpg" alt="Mbappe"/>
+        <h3>Kylian Mbappé</h3>
+        <p>Real Madrid</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero ufc" id="ufc">
+    <div class="overlay">
+      <h1>UFC</h1>
+      <p>Violence. Legacy. Victory.</p>
+      <a href="/ufchome" class="btn">Enter the Octagon</a>
+    </div>
+  </section>
+
+  <section class="drivers ufc">
+    <h2>🥊 Top Fighters</h2>
+    <div class="driver-grid">
+      <div class="driver-card">
+        <img src="static\img\makhatchev.png" alt="Makhachev"/>
+        <h3>Islam Makhachev</h3>
+        <p>Lightweight Champion</p>
+      </div>
+      <div class="driver-card">
+        <img src="static\img\johnes.png" alt="Jones"/>
+        <h3>Jon Jones</h3>
+        <p>Heavyweight Champ</p>
+      </div>
+      <div class="driver-card">
+        <img src="static\img\dvalishvili.png" alt="Mirab"/>
+        <h3>Merab Dvalishvili</h3>
+        <p>Bantamweight Beast</p>
+      </div>
+    </div>
+  </section>
+  {% if session.username %}
+  <p>Welcome, {{ session.username }}! <a href="{{ url_for('logout') }}">Logout</a></p>
+{% else %}
+  <p><a href="{{ url_for('LogIn') }}">Log In</a> | <a href="{{ url_for('Reg') }}">Register</a></p>
+{% endif %}
+
+
+  <footer>
+    <p>&copy; 2025 Sport Pulse. Powered by IGL Inc.</p>
+  </footer>
+</body>
+</html>

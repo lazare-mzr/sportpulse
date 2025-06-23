@@ -1,0 +1,238 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #000;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #ff0000;
+  font-weight: lighter;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff0000;
+}
+
+
+.hero {
+  height: 80vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .overlay {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  padding: 0.8em 1.6em;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.drivers {
+  padding: 3em 2em;
+  text-align: center;
+}
+
+.driver-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.driver-card {
+  padding: 1.5em;
+  border-radius: 10px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.driver-card:hover {
+  transform: translateY(-6px);
+}
+
+.driver-card img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1em;
+}
+
+.hero.f1 {
+  background-image: url('https://source.unsplash.com/1600x600/?formula1,racecar,track');
+}
+
+.hero.f1 .overlay {
+  background-color: rgba(217, 4, 41, 0.85);
+}
+
+.hero.f1 .btn {
+  background-color: white;
+  color: #d90429;
+}
+
+.hero.f1 .btn:hover {
+  background-color: #f5f5f5;
+}
+
+.drivers.f1 {
+  background-color: #fff;
+  color: #222;
+}
+
+.drivers.f1 h2 {
+  color: #d90429;
+}
+
+.driver-card.f1 {
+  background-color: #f8f8f8;
+  color: #000;
+}
+
+.hero.football {
+  background-image: url('https://source.unsplash.com/1600x600/?football,stadium');
+}
+
+.hero.football .overlay {
+  background-color: rgba(43, 147, 72, 0.9);
+}
+
+.hero.football .btn {
+  background-color: white;
+  color: #2b9348;
+}
+
+.hero.football .btn:hover {
+  background-color: #e0ffe0;
+}
+
+.drivers.football {
+  background-color: #ffffff;
+  color: #222;
+}
+
+.drivers.football h2 {
+  color: #2b9348;
+}
+
+.driver-card.football {
+  background-color: #eafbe7;
+  color: #000;
+}
+
+.hero.ufc {
+  background-image: url('https://source.unsplash.com/1600x600/?ufc,cage,fight');
+  background-color: #000;
+}
+
+.hero.ufc .overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.hero.ufc .btn {
+  background-color: #b30000;
+  color: white;
+}
+
+.hero.ufc .btn:hover {
+  background-color: #7a0000;
+}
+
+.drivers.ufc {
+  background-color: #111;
+  color: white;
+}
+
+.drivers.ufc h2 {
+  color: #b30000;
+}
+
+.driver-card.ufc {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.driver-card.ufc:hover {
+  background-color: #2a2a2a;
+}
+
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 1.2em;
+  font-size: 0.9em;
+}
+
+.btn-login {
+  background-color: white;
+  color: #d90429;
+  padding: 0.4em 0.8em;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-left: 1em;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #f0f0f0;
+}
+

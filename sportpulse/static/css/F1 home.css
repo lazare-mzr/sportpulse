@@ -1,0 +1,174 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+  }
+  
+
+  header {
+    background-color: #d90429;
+    color: white;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .logo span {
+    color: #ffffff;
+    font-weight: lighter;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #ffccd5;
+  }
+  
+
+  .hero {
+    background: url('https://source.unsplash.com/1600x600/?formula1,racecar,track') no-repeat center center/cover;
+    height: 80vh;
+    position: relative;
+  }
+  
+  .hero .overlay {
+    background: rgba(217, 4, 41, 0.85);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  .btn {
+    background-color: white;
+    color: #d90429;
+    padding: 0.8em 1.6em;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #f5f5f5;
+  }
+  
+ 
+  .drivers {
+    padding: 3em 2em;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .drivers h2 {
+    color: #d90429;
+    margin-bottom: 1.5em;
+  }
+  
+  .driver-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+  }
+  
+  .driver-card {
+    background-color: #f8f8f8;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .driver-card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .driver-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+  }
+
+  .races {
+    padding: 2em;
+    background-color: #fcefee;
+    text-align: center;
+  }
+  
+  .races h2 {
+    color: #d90429;
+    margin-bottom: 1em;
+  }
+  
+  .races ul {
+    list-style-type: none;
+    font-size: 1.1em;
+  }
+  
+  .races li {
+    margin: 1em 0;
+  }
+  
+
+  footer {
+    background-color: #d90429;
+    color: white;
+    text-align: center;
+    padding: 1.2em;
+    font-size: 0.9em;
+  }
+
+  .btn-login {
+  background-color: white;
+  color: #d90429;
+  padding: 0.4em 0.8em;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-left: 1em;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #f0f0f0;
+}
+
+  
